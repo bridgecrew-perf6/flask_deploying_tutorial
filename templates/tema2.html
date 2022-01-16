@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+
+   <!--  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <title>tema2</title>
+    <style>
+               * html {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+
+        }
+        body{background-color: #fffbf0;
+        margin: 0px;
+        }
+        .container{
+            display: flex;
+            justify-content: space-between;
+        }
+        .container .myList{
+            display: flex;
+            margin-top: 1.2rem;
+            align-items: center ;
+            margin-bottom: 1px;
+            padding-bottom: 1px;
+        }
+        .container .myList li{
+            margin: 1rem;
+            font-size: 2rem;
+        
+        }
+        h1{
+            margin-bottom: 1px;
+            padding-top: 0.5rem;
+            font-size: 2rem;
+            font-family: 'Monsterrat',sans-serif;
+            margin-left: 1rem;
+        }
+        #main-navbar{
+            background-color: #e4ddf4;
+            height: 7rem;
+
+        }
+        .myList li{
+            list-style-type: none;
+        }
+        .myList li a{
+            text-decoration: none;
+            color: black;
+            font-family:'Monsterrat',sans-serif;
+            border: 1px solid black;
+            padding: 10px;
+            border-radius: 12px;
+        }
+        .myList li a:hover{
+            background-color:#fffbf0 ;
+
+        }
+        #containerTwo{
+            display: none;
+            width: 100%;
+            height: 5.5rem;
+            background-color: #943d24;
+
+        } 
+        
+    </style>
+</head>
+<body>
+   <nav id="main-navbar">
+       <div class="container">
+           <h1>main title</h1>
+           <ul class="myList">
+               <li><a href="" onmouseover="myFunc()" onmouseleave="myFunc2()" >option1</a></li>
+               <li><a href="">option2</a></li>
+               <li><a href="">option3</a></li>
+               
+           </ul>
+           
+       </div>
+   </nav>
+   <div id="containerTwo">
+       <div class="box box1"></div>
+       <div class="box box2"></div>
+       <div class="box box3"></div>
+       
+   </div>
+   
+ 
+   <script type="text/javascript"src="{{ url_for('static', filename='temaTwo.js') }}"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+</body>
+</html>

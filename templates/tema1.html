@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   
+
+    <title>tema1</title>
+    <style>
+       * html {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+          background-color: #c5d5cb;
+        }
+        .table{
+          width: 50rem;
+          margin-top: 10%;
+          margin-left: 275px;
+          height: 25rem;
+
+          background-color: #fff;
+        }
+        .table select{
+          width: 100%;
+          height: 2.2rem;
+          margin-top: 0.2rem;
+        }
+        .bottom{
+          margin-bottom: 0;
+          height: 300px;
+        }
+    </style>
+
+   
+</head>
+
+<body >
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#">Features</a>
+            <a class="nav-item nav-link" href="#">Pricing</a>
+            <a class="nav-item nav-link disabled" href="#">Disabled</a>
+          </div>
+        </div>
+      </nav>
+</header>
+<h1>title of website</h1>
+<form>
+ <div class="table">
+   <select name="box1" id="box1" onchange="population('box1','box2')"> 
+     <option selected>open this page</option>
+     <option value="1">1</option>
+     <option value="2">2</option>
+     <option value="3">3</option>
+    </select>
+  <select name="box2" id="box2" >
+    <option selected>open this page</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+   </select>
+   
+ 
+ </div>
+</form>
+
+
+
+<!-- <script>
+  import * from ChooseArray.js
+  function population(s1,s2){
+    var s1 = document.getElementById(s1);
+    var s2 = document.getElementById(s2);
+    s2.innerHTML = "";
+    if(s1.value=="1"){
+      var optionArray = ["1.1|1.1","1.2|1.2","1.3|1.3"];
+
+    } else if (s1.value=="2"){
+      var optionArray = ["2.1|2.1","2.2|2.2","2.3|2.3"];
+    } else if (s1.value == "3"){
+      var optionArray = ["3.1|3.1","3.2|3.2","3.3|3.3"];
+
+    }
+
+    for(var option in optionArray){
+      var pair = optionArray[option].split("|");
+      var newOption = document.createElement("option");
+      newOption.value = pair[0];
+      newOption.innerHTML = pair[1];
+      s2.options.add(newOption);
+
+
+    }
+    if (s2.value == "1.1"){
+
+      for(){
+
+      }
+
+    }
+
+   
+
+
+
+  }
+
+  
+
+  
+
+
+</script> -->
+
+    
+
+<script type="text/javascript"src="{{ url_for('static', filename='ChooseArray.js') }}"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
